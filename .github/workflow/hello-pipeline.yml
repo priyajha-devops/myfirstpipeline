@@ -1,0 +1,12 @@
+name: My First Automation
+on: [push] # This means: Run whenever I upload new code
+
+jobs:
+  say-hello-job:
+    runs-on: ubuntu-latest # Tells GitHub to spin up a free Linux machine
+    steps:
+      - name: Print a greeting
+        run: echo "Hello! Your automated pipeline is working!"
+
+      - name: Show the date
+        run: date
